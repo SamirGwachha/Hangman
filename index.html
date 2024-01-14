@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+  <div class="game">
+<h1 style="text-align: center;">Hangman</h1>
+<h2 style="text-align: center;"><b>Guess the hidden word</b></h2>
+<div class="game-container"> 
+  <svg height="350" width="300" class="figure" >
+  <!--pole-->
+  <line x1="50" y1="100" x2="150" y2="100" style="stroke: white; stroke-width:4px;stroke-linecap:round;"></line>
+  <line x1="50" y1="100" x2="50" y2="300" style="stroke:white; stroke-width: 4px;stroke-linecap:round;"></line>
+  <line x1="150" y1="100" x2="150" y2="149" style="stroke:white; stroke-width:4px;stroke-linecap:round;"></line>
+  <line x1="0" y1="300" x2="100" y2="300" style="stroke:white; stroke-width: 4px;stroke-linecap:round;"></line>
+  <line x1="90" y1="100" x2="50" y2="130" style="stroke:white;stroke-width:4px"></line>
+  <!--head-->
+  <circle cx="150" cy="168" r="19" fill="transparent" style="stroke:white; stroke-width:4px" class="figure-parts" ></circle>
+  <!--body-->
+  <line x1="150" y1="187" x2="150" y2="240" style="stroke:white; stroke-width:4px" class="figure-parts"></line>
+  <!--left arm -->
+  <line x1="150" y1="190" x2="120" y2="210" style="stroke:white; stroke-width:4px;stroke-linecap:round;" class="figure-parts"></line>
+  <!--right arm -->
+  <line x1="150" y1="190" x2="180" y2="210" style="stroke:white; stroke-width:4px;stroke-linecap:round;" class="figure-parts"></line>
+  <!--left leg-->
+  <line x1="150" y1="240" x2="130" y2="270" style="stroke: white; stroke-width:4px;stroke-linecap:round;" class="figure-parts"></line>
+  <!--right leg-->
+  <line x1="150" y1="240" x2="170" y2="270" style="stroke: white; stroke-width:4px;stroke-linecap:round;" class="figure-parts"></line>
+    </svg>
+<!--<img src="hangman-6.svg">--> <!--added img instead of using svg tag-->
+<br>
+<br>
+<a href="\index1.html"> <!--linking the button to another html page-->
+  <button class="solo">Single player</button></a>
+  <br><br>
+  <a href="\index2.html">
+  <button class="multi">Multiplayer</button></a>
+  <br><br>
+  <a href="\how-to-play.html">
+  <button class="how-to-play">How to play??</button>
+  <br>
+  <br>
+  </a>
+  <a href="">
+<button>About us</button>
+  </a>
+</div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
