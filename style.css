@@ -1,26 +1,99 @@
-body{ 
-    background-color: darkcyan;
-    font-family: "consolas",sans-serif,arial; 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(98, 1, 53);
+}
+
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 200px;
+}
+
+.icons i {
+    padding-top: 10px;
+}
+
+/* Adjust the margin as needed */
+
+.fa-solid.fa-gear.fa-2x {
+    color: #0056b3;
+}
+
+.game {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.game-container {
+    background-color: rgb(52, 52, 52);
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     text-align: center;
-    height:fit-content;
-    overflow: auto;
+    width: 80%;
+    max-width: 500px;
+    /* Adjust the max-width to your preference */
+    margin: 0 auto;
 }
-.figure{
-    padding-top: 2px;
+
+h2 {
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    color: whitesmoke;
 }
-.solo{
-    font-size: 16px;
-    padding: 10px 20px;
+
+.figure-parts {
+    stroke: #495057;
+    stroke-width: 4px;
+}
+
+button {
+    font-size: 1.2em;
+    background-color: #28a745;
+    color: #ffffff;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
     cursor: pointer;
-  }
-.multi{
-    font-size:16px;
-    padding: 10px 27px;
+    transition: background-color 0.3s;
 }
-.how-to-play{
-    font-size:16px;
-    padding: 10px 16px;
+
+button:hover {
+    background-color: #218838;
+}
+
+.solo {
+    background-color: #007bff;
+}
+
+.multi {
+    background-color: #dc3545;
+}
+
+.how-to-play {
+    background-color: #ffc107;
+}
+
+/* Additional styling for links */
+a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+    display: inline-block;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+@media screen and (max-width: 600px) {
+    .game-container {
+        width: 90%;
+    }
 }
