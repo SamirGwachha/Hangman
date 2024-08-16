@@ -5,15 +5,26 @@ const popupmsg = document.getElementById('popup-messages');
 const notification = document.getElementById('notification-messages');
 const finalmsg = document.getElementById('final-message');
 const figureparts = document.querySelectorAll('.figure-parts');//queryselector all is used to select multiple css selector all at once 
-
 const words = [
-  'wizard',
-  'pineapple',
-  'dog',
-  'whisper',
-
-
-
+  'acknowledged',
+'organization',
+'communication',
+'unbelievable',
+'refrigeration',
+'deforestation',
+'entertainment',
+'understanding',
+'authorization',
+'extravagant',
+'interference',
+'unquestionable',
+'independence',
+'catastrophize',
+'enthusiastic',
+'procrastinate',
+'revolutionary',
+'personification',
+'sophistication',
 ];
 let randomword = words[Math.floor(Math.random() * words.length)];
 
@@ -21,9 +32,8 @@ const correctletters = [];
 const wrongletters = [];
 
 function displayword() {
-  word.innerHTML = `
- ${randomword.split('') /*.split is used to a word into arrays of letters */
-      .map(
+  word.innerHTML = `${randomword.split('') /*.split is used to a word into arrays of letters */
+      .map(  /*map helps to excecute certain task to an individual letter*/
         letter => `
  <span class = "letter">
  ${correctletters.includes(letter) ? letter : ''}
@@ -44,7 +54,7 @@ function updatewrongletter() {
   //display wrong letters
   wrongletter.innerHTML = `
  ${wrongletters.length > 0 ? '<p>wrong</p>' : ''}
- ${wrongletters.map(letter => <span>${letter}</span>)}
+ ${wrongletters.map(letter => `<span>${letter}</span>`)}
  `;
   //display parts
   figureparts.forEach((part, index) => {
@@ -74,7 +84,7 @@ function shownotification() {
 }
 //keydown letter press
 window.addEventListener('keydown', e => {
-  if (e.keyCode >= 65 && e.keyCode <= 95) {
+  if (e.keyCode >= 65 && e.keyCode <= 90) {
     const letter = e.key;
 
     if (randomword.includes(letter)) {

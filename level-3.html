@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="level-1.css">
+
+</head>
+
+<body>
+  <div class="content-container">
+  <h1 class="text">Level: Hard</h1>
+  <p><b>Guess the word </b></p>
+  <div class="singleplayer-container">
+    <div class="stick-man">
+      <svg height="350" width="300" class="figure-container">
+        <!--pole-->
+        <line x1="50" y1="100" x2="150" y2="100" style="stroke: black; stroke-width:4px;stroke-linecap:round;"></line>
+        <line x1="50" y1="100" x2="50" y2="300" style="stroke:black; stroke-width: 4px;stroke-linecap:round;"></line>
+        <line x1="150" y1="100" x2="150" y2="149" style="stroke:black; stroke-width:4px;stroke-linecap:round;"></line>
+        <line x1="0" y1="300" x2="100" y2="300" style="stroke:black; stroke-width: 4px;stroke-linecap:round;"></line>
+        <line x1="90" y1="100" x2="50" y2="130" style="stroke:black;stroke-width:4px"></line>
+        <!--head-->
+        <circle cx="150" cy="168" r="19" fill="transparent" style="stroke:black; stroke-width:4px" class="figure-parts">
+        </circle>
+        <!--body-->
+        <line x1="150" y1="187" x2="150" y2="240" style="stroke:black; stroke-width:4px" class="figure-parts"></line>
+        <!--left arm -->
+        <line x1="150" y1="190" x2="120" y2="210" style="stroke:black; stroke-width:4px;stroke-linecap:round;"
+          class="figure-parts"></line>
+        <!--right arm -->
+        <line x1="150" y1="190" x2="180" y2="210" style="stroke:black; stroke-width:4px;stroke-linecap:round;"
+          class="figure-parts"></line>
+        <!--left leg-->
+        <line x1="150" y1="240" x2="130" y2="270" style="stroke: black; stroke-width:4px;stroke-linecap:round;"
+          class="figure-parts"></line>
+        <!--right leg-->
+        <line x1="150" y1="240" x2="170" y2="270" style="stroke: black; stroke-width:4px;stroke-linecap:round;"
+          class="figure-parts"></line>
+      </svg>
+    </div>
+    <!--word container-->
+    <div class="wrong-letters-container">
+      <div id="wrong-letters"></div>
+    </div>
+    <div class="word" id="word"></div>
+  </div>
+  <!--final messages-->
+  <div class="popup-messages" id="popup-messages">
+    <div class="popup">
+      <h2 id="final-message"></h2>
+      <button id="play-button">Play Again</button>
+    </div>
+  </div>
+</div>
+  <!--notification-->
+  <div class="notification-messages" id="notification-messages">
+    <p> YOU HAVE ALREADY ENTERED THIS LETTER</p>
+    <script src="level-3.js"></script>
+  </div>
+</body>
+
+</html>

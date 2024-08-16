@@ -1,0 +1,151 @@
+@font-face {
+    font-family: pencil;
+    src: url(pencil.ttf);
+}
+body {
+    color: black ;
+    background-image: url("cardboard.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "consolas", sans-serif, arial;
+    /* font faily has more then 2 fonts because if a font is not supported by the web brower it uses the next font*/
+    overflow: hidden;
+}
+.content-container{
+    background-image: url("paper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 80%;
+    max-width: 900px;
+    max-height: 650px;
+    /* Adjust the max-width to your preference */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+}
+h1,p { 
+    font-family: 'pencil';
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.text {
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+.stick-man {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 120px ;
+    bottom: 50px;
+}
+
+.singleplayer-container {
+    position: relative;
+    height: 350px;
+    margin: auto;
+    width: 350px;
+
+}
+
+.figure-parts {
+    display: none;
+}
+
+.wrong-letters-container {
+    color: black;
+    position: absolute;
+    bottom: 60%;
+    left: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.wrong-letters-container p {
+    color: black;
+    margin: 0 0 5px;
+}
+
+.wrong-letters-container span {
+    font-size: 24px;
+}
+
+.word {
+    display: flex;
+    position: relative;
+
+}
+
+.letter {
+    font-family: 'pencil';
+    position: relative;
+    bottom: 100px;
+    left:200px;
+    border-bottom: 3px solid black;
+    display: inline-flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    /*horizontal*/
+    margin: 0 3px;
+    height: 50px;
+    width: 20px;
+}
+
+.popup-messages {
+    font-family: 'pencil';
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup {
+    background-image: url(cardboard-paper.png);
+    background-repeat: none;
+    background-size: cover;
+    border: 3px solid black;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup button {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.popup button:active {
+    font-weight: bold;
+    transform: scale(0.95);
+}
+
+.notification-messages {
+    color: white;
+    background-color: rgba(0, 0, 0, 3);
+    border-radius: 10px 10px 0 0;
+    padding: 12px;
+    position: absolute;
+    bottom: -60px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.notification-messages p {
+    margin: 0;
+}
+
+.notification-messages.show {
+    transform: translateY(-60px);
+}
